@@ -1,7 +1,8 @@
 FROM debian:8.6
 MAINTAINER Juracy Filho <juracy@gmail.com>
 
-RUN apt-get update && \
+RUN mkdir /work && \
+    apt-get update && \
     apt-get install -y wget build-essential libssl-dev libcurl4-gnutls-dev gettext expat libexpat1-dev zlib1g-dev man python
 
 ENV GIT_URL=https://www.kernel.org/pub/software/scm/git
@@ -30,4 +31,5 @@ RUN cd /tmp && \
     apt-get remove -y wget build-essential libssl-dev libcurl4-gnutls-dev gettext expat libexpat1-dev zlib1g-dev python && \
     apt-get autoremove -y
 
+WORKDIR /work
 ENTRYPOINT /bin/bash
