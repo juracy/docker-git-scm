@@ -1,0 +1,22 @@
+docker-git-scm
+==============
+
+Container for Git
+
+== Usage
+
+[source,bash]
+----
+docker run -it juracy/docker-git-scm
+----
+
+== Manage a git repository with specific git version
+
+[source,bash]
+----
+docker run -it -v $(pwd):/work juracy/git-scm:2.11 git status
+----
+
+== Links
+
+. https://www.git-scm.com
