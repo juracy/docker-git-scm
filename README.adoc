@@ -14,7 +14,7 @@ docker run -it juracy/docker-git-scm
 
 [source,bash]
 ----
-docker run -it -v $(pwd):/work juracy/git-scm:2.11 git status
+docker run -it -v $(pwd):/work juracy/docker-git-scm:2.11 git status
 ----
 
 == Links
