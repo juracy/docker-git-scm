@@ -2,7 +2,7 @@ FROM debian:8.6
 MAINTAINER Juracy Filho <juracy@gmail.com>
 
 ENV GIT_URL=https://www.kernel.org/pub/software/scm/git
-ENV GIT_VERSION=2.5.5
+ENV GIT_VERSION=2.6.0
 ENV GIT_FILENAME=git-${GIT_VERSION}
 ENV GIT_ARCHIVE=${GIT_FILENAME}.tar.gz
 ENV GIT_MANPAGES=git-manpages-${GIT_VERSION}.tar.gz
